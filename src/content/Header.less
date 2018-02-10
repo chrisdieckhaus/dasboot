@@ -1,0 +1,32 @@
+@import './Variables.less';
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: @dark-blue;
+    height: 4em; 
+    .header-text;
+
+    .menu-link-container {
+        grid-column-start: 4;
+        grid-column-end: -1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);      
+    }
+
+    .menu-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a {
+            color: @white;
+            text-decoration: none;
+            padding-bottom: 2px;
+        }
+    
+        a:hover {
+            border-bottom: 2px solid @white;
+        }
+    }
+}
