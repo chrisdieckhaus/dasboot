@@ -7,6 +7,9 @@ import Card from '../components/Card';
 
 class Index extends React.Component {
   render() {
+	const indexContent = get(this, 'props.data.allMarkdownRemark.edges')
+		.filter(post => post.node.frontmatter.title === "Index")[0];
+	console.log(indexContent);
 
 	const content = "Tenting. We spend weeks sleeping out in the cold, rain, and mud. We sacrifice sleep, grades, and social life. " + 
 	"And we do it all for the chance to squeeze ourselves into a tiny little gym with 1,600 of our classmates and watch ten other students toss a leather ball at a metal hoop.\n" +

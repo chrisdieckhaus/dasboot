@@ -11,8 +11,7 @@ class Card extends React.PureComponent {
 				<div className="card-title">
 					{this.props.title}
 				</div>
-				<div className="card-content">
-					{this.props.children}
+				<div className="card-content" dangerouslySetInnerHTML={{ __html: this.props.children }}>
 				</div>
 			</div>
         )
