@@ -2,6 +2,7 @@
 title: Index
 date: "2015-05-28T22:40:32.169Z"
 path: "/blah/"
+cardTitle: "The best tent in Kville. Hands down."
 ---
 
 Tenting. We spend weeks sleeping out in the cold, rain, and mud. We sacrifice sleep, grades, and social life. And we do it all for the chance to squeeze ourselves into a tiny little gym with 1,600 of our classmates and watch ten other students toss a leather ball at a metal hoop.
