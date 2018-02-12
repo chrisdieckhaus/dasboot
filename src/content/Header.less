@@ -4,7 +4,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background-color: @dark-blue;
-    height: 4em; 
+    min-height: 4em; 
     .header-text;
 
     .menu-link-container {
@@ -12,6 +12,18 @@ nav {
         grid-column-end: -1;
         display: grid;
         grid-template-columns: repeat(3, 1fr);      
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(4, 1fr);
+	}
+	
+	@media (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+	}
+	
+	@media (max-width: 400px) {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .menu-link {
