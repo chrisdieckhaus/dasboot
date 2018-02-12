@@ -7,9 +7,11 @@ import { members } from '../pages/members/MemberList';
 
 import MemberCard from '../components/MemberCard';
 
-import '../content/Members.less';
-
 class Members extends React.Component {
+	componentWillMount() {
+		document.body.className = "members-img";
+	}
+
   	render() {
 		return (
 			<div className="container">

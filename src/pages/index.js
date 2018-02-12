@@ -6,18 +6,21 @@ import Helmet from 'react-helmet';
 import Card from '../components/Card';
 
 class Index extends React.Component {
-  render() {
-	const indexContent = get(this, 'props.data.markdownRemark.html');
-	const cardTitle = "The best tent in Kville. Hands down.";
-    return (
-      <div className="container">
-        <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
-        <Card title={cardTitle}>
-          {indexContent}
-        </Card>
-      </div>
-    );
-  }
+	componentWillMount() {
+		document.body.className = "index-img";
+	}
+  	render() {
+		const indexContent = get(this, 'props.data.markdownRemark.html');
+		const cardTitle = "The best tent in Kville. Hands down.";
+		return (
+		<div className="container">
+			<Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
+			<Card title={cardTitle}>
+			{indexContent}
+			</Card>
+		</div>
+		);
+  	}
 }
 
 Index.propTypes = {

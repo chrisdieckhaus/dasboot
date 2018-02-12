@@ -6,6 +6,10 @@ import Helmet from 'react-helmet';
 import Card from '../components/Card';
 
 class About extends React.Component {
+	componentWillMount() {
+		document.body.className = "about-img";
+	}
+
   	render() {
 		const re = /.*pages\/about.*/;
 		const years = get(this, 'props.data.allMarkdownRemark.edges')
