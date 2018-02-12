@@ -8,10 +8,6 @@ import { members } from '../pages/members/MemberList';
 import MemberCard from '../components/MemberCard';
 
 class Members extends React.Component {
-	componentWillMount() {
-		document.body.className = "members-img";
-	}
-
   	render() {
 		return (
 			<div className="container">

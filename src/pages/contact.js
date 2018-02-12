@@ -6,10 +6,6 @@ import Helmet from 'react-helmet';
 import Card from '../components/Card';
 
 class Contact extends React.PureComponent {
-    componentWillMount() {
-        document.body.className = "contact-img";
-    }
-
   	render() {
         const contact = this.props.data.markdownRemark;
 		return (

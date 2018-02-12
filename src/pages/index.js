@@ -6,10 +6,7 @@ import Helmet from 'react-helmet';
 import Card from '../components/Card';
 
 class Index extends React.Component {
-	componentWillMount() {
-		document.body.className = "index-img";
-	}
-  	render() {
+	render() {
 		const indexContent = get(this, 'props.data.markdownRemark.html');
 		const cardTitle = "The best tent in Kville. Hands down.";
 		return (
